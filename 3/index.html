@@ -17,12 +17,32 @@
   </head>
   <body>
     <h1> Hey !! </h1>
-    <section class="section-1">
-      <h1> Hey </h1>
-      <span class="counter"> 101 </span>
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+
+<section class="section-1">
+  <h1> Hey </h1>
+<script>
+$("h1").css("color","red")
+$("section").css("background-color","yellow");
+ $("h1").css("color", "red"); ("font-size:4em");
+  $("#row-3").on("click", function(){
+  $("#row-3").css( "background-color", "gray");
+  $("#row-3").css("transition-delay", "4s");
+  $(".counter").on("click",function(){
+    counter = $(".counter").text();
+    counter = parseInt(counter);
+    $(".counter").text(counter+10);
+  });
+  });
+  $(".section-1 > h1").css("font-size", "4em");
+  $("tr:last").css("background-color", "red");
+</script>
+     <span class="counter"> 101 </span>
       <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
     </section>
-
     <table>
       <tbody>
         <tr class="row" id="row-1">
@@ -61,6 +81,9 @@
         <input type="text" name="name" value="x@xyz.com">
 
       </fieldset>
-    </form>
+   </form>
+<!--section-->
+
+
   </body>
 </html>
